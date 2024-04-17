@@ -1,0 +1,217 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{hyperref}
+    \usepackage{url}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{fontawesome5} % social icons
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+% Link colors
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!70!black},
+    urlcolor={blue!60!black}}
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Lasse Pladsen}}\\
+	Trimveien 6, 0372 Oslo, Norway $|$ DOB: 21.07.1999 \\ \href{mailto:lasse.pladsen@hotmail.com}{\raisebox{-0.05\height}\faEnvelope \ lasse.pladsen@hotmail.com}$|$ \href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +47 94 26 77 61} $|$ \href{https://www.linkedin.com/in/lasse-p-313b41126/}{\raisebox{-0.05\height}\faLinkedin\ Lasse Pladsen} $|$ \href{https://github.com/LassePladsen}{\raisebox{-0.05\height}\faGithub\ Lasse Pladsen} \\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Oslo}\hfill Oslo, Norway\\
+Bachelor's degree in Physics and Astronomy \hfill August 2021 - current\\
+Physics, numerical modelling, analysis, machine learning\\
+\vspace{2mm}
+\textbf{Lillehammer north high school extension}\hfill Lillehammer, Norway\\
+Higher Education Entrance Qualification \hfill August 2019 - July 2021\\
+One year of high school extension for university qualification,
+and one year of teaching myself all necessary remaining courses
+for physics bachelor qualification 
+
+\vspace{2mm}
+\textbf{Inland Norway
+University of Applied Sciences}\hfill Lillehammer, Norway\\
+High school apprentice program: Apprentice of ICT-service operations \hfill August 2017 - June 2019\\
+Work and studies at the university's IT department, first and second line help desk.\\
+Passed ICT-service certificate.
+
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+\textbf{Talkmore (Telenor
+Norge AS)} \hfill Oslo, Norway\\
+\textit{Customer service representative} \hfill June 2022 - August 2024\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Summer position in the customer service team.
+	\item Won internal competition for most satisfied customers in my final month here. 
+\end{itemize}
+\textbf{Inland Norway
+University of Applied Sciences} \hfill Lillehammer, Norway\\
+\textit{IT apprentice} \hfill August 2017 - June 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item IT support for all students and employees.
+	\item First and second line at the help desk.
+	\item Passed ICT-service certificate.
+\end{itemize}
+\textbf{Norwegian University of University
+of Applied Sciences Lillehammer} \hfill Gjøvik, Norway\\
+\textit{Work experience program: ICT-service.} \hfill March 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item IT support for all students and employees.
+\end{itemize}
+\textbf{Karriere Oppland} \hfill Lillehammer, Norway\\
+\textit{Work experience program: ICT-service} \hfill October 2016\\
+\begin{itemize} \itemsep 1pt
+	\item IT support for all employees.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & Python, Java, Matlab                            \\
+	Languages:             & Norwegian (native), English                                        \\
+	% Libraries/Frameworks:  & R Shiny, tidyverse, SGE, Tensorflow, Keras                       \\
+	% Devops:                & Bash, Docker, Git, Virtual Box                                   \\
+	% Cloud:                 & Azure (Data Factory, Active Directory, Virtual Machine), AWS EC2 \\
+	% Other:                 & Ubuntu, Vim, Latex, Stata, Eviews, Hashcat, Gelphi                      \\
+\end{tabular}
+\vspace{2mm}
+
+% \header{Community Engagement \& Presentations}
+% {\textbf{Artificial Intelligence: A Blessing or a Curse.\\ Discussing Security Concerns of Diagnostic Models in Radiological Assessment  }}\hfill February 2024 \\ \href{https://docs.google.com/presentation/d/1TAFXM-GQo5nhw1MV5_RvmF1V_H3wdu6-/edit#slide=id.p1}{Link to presentation}\\
+% \textbf{Upstate University} \\
+% Provided instruction to medical students concerning how AI works and an introduction to the security landscape. The talk focused on attacks and defenses and gave a tutorial of model inversion.\\
+% \vspace*{2mm}
+% {\textbf{Review of Technology and Sustainable Development}}\hfill November 2023 \\ \href{https://www.scienceopen.com/hosted-document?doi=10.13169/prometheus.39.3.0182}{Link to paper}\\
+% \textbf{Prometheus Journal in Innovation Studies} \\
+% Authored publication reviewing recent developments and discussions in AI and sustainability. The reviewed work was by Henrik Skaug Sætra on his views on sustainability and technology. Applied critique based on applying economic theory and recent developments concerning LLMs.\\
+% \vspace*{2mm}
+% {\textbf{Simpar}} \hfill November 2023                              
+% \\ {\textbf{R Package Parameter Uncertainty Simulations in Pharmacometric Modeling}} \hfill  \\ \href{https://www.metrumrg.com/wp-content/uploads/2023/11/ACoP14\_W-035\_simpar-an-R-Package-for-Parameter-Uncertainty-Simulations-in-Pharmacometric-Modeling.pdf}{Link to poster} \\
+% Presented at ACoP14. This project is dedicated to integrating parameter uncertainty into pharmacometric simulations, which plays a crucial role in making informed decisions in drug development. Initially, the metrumrg package in R was instrumental for simulating both fixed and random effect parameters.\\
+% \vspace*{2mm}
+% {\textbf{Software Engineering and Productionizing R Shiny}}
+%  \hfill August 2021  \\ \href{https://docs.google.com/presentation/d/1YPzK-lo842V0psay1k1ImMKTS485v1pH/edit?usp=sharing&ouid=113772468977296182174&rtpof=true&sd=true}{Link to presentation}\\ {\textbf{Critical Path Institute}}\\
+% Provided instruction on modeling methods for software. Focus of the presentation concerned UML, UX/UI principles, color theory, and R Shiny development. The Golem framework was presented with additional web development integrations with CSS, Javascript, and HTML. Additional instruction on unit testing and other testing methodologies were also covered.\\
+% \vspace*{2mm}
+% {\textbf{Determinants of Baseball Player Salary and Performance}}  \hfill October 2020 \\ \href{ https://statds.org/events/ucsas2020/posters/ucsas-6-Marinelli\_Poster.pdf}{Link to poster}\\ {\textbf{University of Connecticut}} \\
+% Utilized a variety of methods to determine the main factors that drive player salary. An Autoregressive Distributive Lag Model with Heteroskedasticity and Autocorrelation-Consistent standard errors was calculated to ensure the robustness of the model. Additional clustering methods with principal components analysis were leveraged to motivate analysis.\\
+% \vspace*{2mm}
+% {\textbf{Analysis of NYPD}}  \hfill August 2020
+% \\ \href{ https://colab.research.google.com/drive/1H27noJ9EAokY7cB\_a0axsqBYNlYa7Y\_0?usp=sharing}{Link to blog post}\\
+% Conducted analysis on data released from Propublica to evaluate inequality in policing. Synthetic Minority Oversampling Techniques were used to correct for class imbalance issues in classification. Apache Spark was used to clean and prepare the data with other parallel processing techniques.\\
+% \vspace*{2mm}
+% {\textbf{Analysis of GeoData and Workflow Construction for QuAnGIS}}  \hfill March 2020
+% \\  \href{ https://drive.google.com/file/d/1Jmv0WE8W3qyxehfNHyOAVhTtAG4WAIqZ/view?usp=sharingf}{Link to presentation}\\ 
+% \textbf{Utrecht University} \\
+% Discussed research with Geography faculty and creating workflows to conduct geographic analysis. R was used to create maps to represent logical relationships behind cartography using formal description language.\\
+% \vspace*{2mm}
+% {\textbf{Introduction to 8-Bit Quantization}}  \hfill December 2019
+% \\ \href{ https://drive.google.com/file/d/1bipEIAoaTdJVr5r0LqA3YRFknoxQanZP/view?usp=sharing}{Link to presentation}\\ \textbf{DXC Technology} \\
+% Talk given to other data scientists on machine learning methods for IOT. The focus of the talk emphasized the current state of the art and the state of the literature. These techniques essentially map float data with associated information to discrete values.\\
+% \vspace*{2mm}
+% {\textbf{Introduction to Quantum Computing}} \hfill October 2019 \\ \href{ https://drive.google.com/file/d/1X-LVdBFaXF1gg\_TzeOABtU2EjHdsSAvl/view?usp=sharing}{Link to presentation}\\ \textbf{DXC Technology} \\
+% Gave talk on the state of quantum computing using Qiskit. The Grover Search algorithm was discussed along with review of algorithm complexity and the lower-level operations of computers.\\
+% \vspace*{8mm}
+% {\textbf{Smart Tweet}}   \hfill September 2019 \\ \href{ https://github.com/rymarinelli/Penn-Apps}{Link to presentation}  \\
+%  \textbf{Penn Apps – University of Pennsylvania} \\
+% Participated in the America’s largest Hack-a-thon. SmartTweet, the project created during this event, applied natural language processing to estimate the effect certain behaviors have on being retweeted. The main technique applied was latent semantic analysis.\\
+% \vspace*{2mm}
+% {\textbf{R Shiny Development}} \hfill   August 2019
+% \\ \href{https://docs.google.com/presentation/d/1liRcQaC\_qCJuOQtLFkEMwvmIn6-S9L2RN2diOZkBbA0/edit?usp=sharing}{Link to presentation}\\
+% \textbf{DXC Technology} \\ 
+% Led an hour-long talk to university students and coworkers on UX/UI design in R through making Shiny dashboards. This talk encompassed how to configure a Nginx server to share visualizations and design principles. The integration of CSS and HTML were also discussed in the talk.\\
+% \vspace*{2mm}
+% {\textbf{International Research Showcase Presenter}} \hfill May 2018
+% \\ \href{https://drive.google.com/file/d/1RmjXToYmMoYd0hwdbTXeXe0T17f3D-G8/view?usp=sharing}{Link to poster} \\
+% \textbf{Drexel University} \\
+% Presented independent research using time-series data concerning Japanese economic policy and the success of Abenomics to include women in the workforce to increase inflation\\
+% \vspace*{2mm}
+
+% \header{References}
+% Name: Justin Soniat\\
+% Relationship: Coworker at DXC Technology/Gainwell Technologies \\
+% Email: soniatjustin@gmail.com \\
+% Phone: +1-985-414-3894\\
+% \vspace*{2mm}
+% Name: Haydar Mahdi\\
+% Relationship: Former Scrum Master at DXC Technology\\
+% Email: haydarm@gmail.com\\
+% Phone: +1-504-258-4587\\
+% \ 
+\end{document}
